@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifes i Serveis - FixItPro Solucions Informàtiques</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="header-image-container">
+                    <img src="img/header.png" alt="FixItPro Solucions Informàtiques" class="header-img">
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> INICI</a></li>
+                    <li><a href="tarifes.html" class="active"><i class="fas fa-tag"></i> TARIFES</a></li>
+                    <li><a href="quisom.html"><i class="fas fa-users"></i> QUI SOM</a></li>
+                    <li><a href="contacte.html"><i class="fas fa-envelope"></i> CONTACTE</a></li>
+                    <li class="cta-nav"><a href="suport.html"><i class="fas fa-exclamation-circle"></i> SUPORT
+                            TÈCNIC</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO TARIFES -->
+        <section class="hero hero-inner">
+            <div class="container">
+                <h1>Tarifes i Serveis Professionals</h1>
+                <p>Preus transparents, sense lletra petita i amb la màxima garantia de qualitat.</p>
+            </div>
+        </section>
+
+        <!-- PRICING GRID -->
+        <section class="section pricing-main">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3>Diagnòstic Estàndard</h3>
+                        <div class="price">25€</div>
+                        <p class="price-note">(Gratuït si s'accepta la reparació)</p>
+                        <ul class="card-list">
+                            <li>Revisió de hardware completa</li>
+                            <li>Informe d'errors de sistema</li>
+                            <li>Pressupost sense compromís</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-icon"><i class="fas fa-broom"></i></div>
+                        <h3>Manteniment Preventiu</h3>
+                        <div class="price">45€</div>
+                        <p class="price-note">Ideal per a equips lents</p>
+                        <ul class="card-list">
+                            <li>Neteja física interna</li>
+                            <li>Optimització del registre</li>
+                            <li>Eliminació de malware/virus</li>
+                            <li>Actualitzacions crítiques</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="pricing-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Reparació Avançada</h3>
+                        <div class="price"><span>Des de</span> 60€</div>
+                        <p class="price-note">+ cost de components</p>
+                        <ul class="card-list">
+                            <li>Canvi de pantalles i teclats</li>
+                            <li>Reparació de placa base</li>
+                            <li>Ampliació de RAM i SSD</li>
+                            <li>Recuperació de dades</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Suport Remot</h3>
+                        <div class="price">35€<span>/hora</span></div>
+                        <p class="price-note">Solució inmediata</p>
+                        <ul class="card-list">
+                            <li>Configuració de correu</li>
+                            <li>Instal·lació de programari</li>
+                            <li>Optimització remota</li>
+                            <li>Suport pas a pas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sla-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Pla Business Premium (SLA)</h4>
+                        <p>Manteniment mensual per a empreses amb resposta garantida en menys de 4 hores.</p>
+                    </div>
+                    <a href="contacte.html" class="btn btn-primary">Sol·licitar Info</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS CAROUSEL -->
+        <section class="section testimonials-section">
+            <div class="testimonials-bg">
+                <div class="container">
+                    <div class="section-header centered">
+                        <h2>Opinions dels nostres clients</h2>
+                        <p>Més de 200 clients satisfets a Barcelona i rodalies.</p>
+                    </div>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-track-container">
+                            <div class="carousel-track" id="carouselTrack">
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"Servei excel·lent i molt ràpid. Van reparar el meu portàtil que no encenia
+                                            en menys de 24 hores. Molt recomanable!"</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">MT</div>
+                                            <div>
+                                                <strong>Marc Torrent</strong>
+                                                <span>Arquitecte · Barcelona</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"L'Erik és un professional de cap a peus. Ens porta el manteniment de tota
+                                            l'oficina i mai hem tingut cap problema greu."</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">SF</div>
+                                            <div>
+                                                <strong>Sílvia Font</strong>
+                                                <span>Directora de PIME · Hospitalet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"Molt honestos amb el preu i el diagnòstic. No intenten vendre't coses que no
+                                            necessites. Tornaré segur!"</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">JM</div>
+                                            <div>
+                                                <strong>Jordi Mas</strong>
+                                                <span>Autònom · Badalona</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"Em van recuperar totes les fotos del disc dur que creia perdudes. Un servei
+                                            increïble, ara el recomanem a tots els amics."</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">LG</div>
+                                            <div>
+                                                <strong>Laura Gómez</strong>
+                                                <span>Dissenyadora Gràfica · Barcelona</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"Contracte de manteniment anual. La millor inversió per al nostre negoci.
+                                            Resposta en menys de 2 hores sempre que tenim un problema."</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">AC</div>
+                                            <div>
+                                                <strong>Albert Coll</strong>
+                                                <span>Gerent de Comerç · Gràcia</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-box">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i></div>
+                                        <p>"Preu molt raonable i una atenció personalitzada que no trobes als grans
+                                            establiments. 100% recomanable per a empreses."</p>
+                                        <div class="client-info">
+                                            <div class="client-avatar">RM</div>
+                                            <div>
+                                                <strong>Rosa Martínez</strong>
+                                                <span>Advocada · Eixample</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Següent">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="section-header centered">
+                    <h2>Preguntes Freqüents</h2>
+                    <p>Resolem els teus dubtes més habituals.</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Quina garantia tenen les reparacions?</h4>
+                        <p>Totes les nostres reparacions de hardware tenen una garantia mínima de 6 mesos, a més de la
+                            garantia del fabricant en els components nous.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>He de portar l'equip a la vostra oficina?</h4>
+                        <p>Pots portar-lo tu mateix o podem gestionar una recollida a domicili per a la teva comoditat.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Quant trigueu a fer un diagnòstic?</h4>
+                        <p>Normalment entreguem el diagnòstic i pressupost en un termini de 24 hores des de la recepció
+                            de l'equip.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Accepteu pagaments amb Bizum o Targeta?</h4>
+                        <p>Sí, acceptem efectiu, targeta de crèdit, Bizum i transferència bancària per a empreses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+                <div class="footer-col info">
+                    <h3>FixItPro</h3>
+                    <p>Carrer de l'ordinador, 123, 08020 Barcelona</p>
+                    <p>Tel: 93 123 45 67</p>
+                    <p>Email: contacte@fixitpro.es</p>
+                    <p><i class="fas fa-clock" style="margin-right:6px;color:#4fa3e0;"></i><strong>Dl - Dv:</strong>
+                        08:00 &ndash; 18:00 h</p>
+                </div>
+                <div class="footer-col links">
+                    <h3>Enllaços Ràpids</h3>
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="tarifes.html">Tarifes</a></li>
+                        <li><a href="quisom.html">Qui Som</a></li>
+                        <li><a href="contacte.html">Contacte</a></li>
+                        <li><a href="suport.html">Suport Tècnic</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixItPro Solucions Informàtiques. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
