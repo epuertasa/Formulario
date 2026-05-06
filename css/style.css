@@ -1194,3 +1194,124 @@ textarea:focus+i {
     border-radius: 4px;
     box-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
 }
+
+/* --- BRAND CAROUSEL --- */
+.brands-section {
+    padding: 80px 0;
+    background: var(--light-grey);
+    overflow: hidden;
+    position: relative;
+}
+
+.brands-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brands-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.brands-slider {
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 30s linear infinite;
+}
+
+.brands-slider:hover {
+    animation-play-state: paused;
+}
+
+.brand-item {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.brand-card {
+    background: var(--white);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.brand-card i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--secondary-blue);
+}
+
+.brand-card span {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--secondary-blue);
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-md);
+}
+
+.brand-card:hover i, .brand-card:hover span {
+    color: var(--primary-blue);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 10)); }
+}
+
+/* --- ADDITIONAL ABOUT CONTENT --- */
+.quisom-details {
+    padding-bottom: 80px;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mv-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    border-top: 5px solid var(--primary-blue);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+}
+
+.mv-card i {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.mv-card h3 {
+    margin-bottom: 15px;
+    color: var(--secondary-blue);
+    font-size: 24px;
+}
+
+.mv-card p {
+    color: var(--text-light);
+}
