@@ -1217,8 +1217,8 @@ textarea:focus+i {
 
 .brands-slider {
     display: flex;
-    width: calc(250px * 20);
-    animation: scroll 30s linear infinite;
+    width: calc(250px * 48);
+    animation: scroll 60s linear infinite;
 }
 
 .brands-slider:hover {
@@ -1272,7 +1272,7 @@ textarea:focus+i {
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 10)); }
+    100% { transform: translateX(calc(-250px * 24)); }
 }
 
 /* --- ADDITIONAL ABOUT CONTENT --- */
